@@ -1,0 +1,31 @@
+/* 
+Kameleon Template
+Author: Chris Mooney (http://themeforest.net/user/ChrisMooney)
+*/
+
+body {
+	color:#191919;
+	background: #f2f2f2 url(../../img/bg.jpg) repeat-x top;
+}
+h1#logo {
+	background:url(../../img/logo.png) no-repeat scroll 0 0 transparent;
+}
+nav a, nav a:visited {
+	color: #1a1a1a;	
+text-shadow:0 1px 0 #FFFFFF;
+}
+nav a:hover {
+	color:#666666;
+}
+
+
+
+footer {
+color:#666666;
+}
+footer li a, footer li a:visited  {
+color:#191919;
+}
+footer li a:hover {
+	color:#666666;
+}
