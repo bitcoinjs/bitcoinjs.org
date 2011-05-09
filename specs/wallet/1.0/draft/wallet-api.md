@@ -164,7 +164,7 @@ The wallet server stores the following items for each wallet:
     as base64
   - `b64!` - Following data is encoded as base64
 
-  Clients MUST ignore keyInfo fields they don't know or that with an
+  Clients MUST ignore keyInfo fields they don't know or that use an
   unknown encoding identifier.
 
   Private keys MUST be encrypted by default, however they can be
