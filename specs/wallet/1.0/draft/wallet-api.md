@@ -1,5 +1,6 @@
 ---
 layout: githubmd
+title: Wallet API Specification 1.0 Draft
 ---
 # Wallet Server Overview
 
