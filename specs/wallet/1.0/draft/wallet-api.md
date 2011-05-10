@@ -465,9 +465,11 @@ The following operations SHOULD NOT require activating the wallet:
 
 - Display balance  
   If some public keys are encrypted (their data starts with "enc!")
-  the client should mark the balance in parentheses to denote that it
-  may not be the full balance available and update it once the wallet
-  is unlocked.
+  the client SHOULD mark the balance in square brackets to denote that
+  it may not be the full balance available and update it once the
+  wallet is unlocked. It SHOULD also provide a help icon,
+  notification, tooltip or some other way for the user to find out
+  what the square brackets mean.
 
 - Display address book information  
   The client SHOULD let the user browse the address book where that
