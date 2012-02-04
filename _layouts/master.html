@@ -51,7 +51,7 @@
     {% assign current = 'current' %}
   {% endif %}
 	<li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}"><a href="{% if link.url == "/index.html" %}/{% else %}{{ link.url }}{% endif %}">{{ link.text }}</a></li>
-  {% endfor %}
+{% endfor %}
 </ul>
 <br class="cl" />
     </nav>
@@ -66,7 +66,9 @@
   <!-- footer Start -->
   <footer>
     <ul class="footer-nav">
-      <li><a href="/">Home</a></li>
+{% for link in site.navigation %}
+      <li><a href="{% if link.url == "/index.html" %}/{% else %}{{ link.url }}{% endif %}">{{ link.text }}</a></li>
+{% endfor %}
     </ul>
     <p>Copyright &copy; 2010, <a href="http://www.bitcoinjs.org">BitcoinJS Project</a>.</p>
     <br class="cl" />
