@@ -1,0 +1,36 @@
+---
+layout: master
+---
+
+{{ content }}
+
+<!-- page sidebar -->
+<aside>
+  <h3>Latest Blog Posts</h3>
+  <ul class="sidebar-latestblog">
+    {% for post in site.categories.blog %}
+    <li><img height="50" width="50" class="inlinepic" src="{{ post.thumb }}" alt=""><a href="{{ post.url }}">{{ post.title }}</a>
+      <time>{{ post.date | date: "%e" | ordinalize }} {{ post.date | date: '%B %Y' }}</time>
+      <br class="cl" />
+    </li>
+    {% endfor %}
+  </ul>
+  <h3>Twitter Feed</h3>
+  <ul id="twitter_update_list">
+    <li></li>
+  </ul>
+  <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script> 
+  <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/bitcoinjs.json?callback=twitterCallback2&amp;count=4"></script> 
+  <br class="cl" />
+  <br />
+  <div class="block">
+    <h3>Socialise With Us</h3>
+    <ul class="social-list">
+      <li><a href="http://twitter.com/bitcoinjs"><img class="tooltip" src="/img/social/32/twitter.png" title="Follow us on Twitter" alt="Twitter" /></a></li>
+      <li><a href="http://groups.google.com/group/bitcoinjs"><img class="tooltip" src="/img/social/32/google.png" title="Join the mailing list" alt="Google Groups" /></a></li>
+      <li><a href="https://github.com/bitcoinjs"><img class="tooltip" src="/img/social/32/github.png" title="Watch our projects on Github" alt="Github" /></a></li>
+    </ul>
+  </div>
+</aside>
+<br class="cl" />
+<br class="cl" />

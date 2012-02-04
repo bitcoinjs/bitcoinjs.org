@@ -1,0 +1,24 @@
+---
+layout: generic
+title: About BitcoinJS
+---
+
+<!-- page title -->
+<h2 class="ribbon blue full">Blog<span>The latest news from the developers</span> </h2>
+<div class="triangle-ribbon blue"></div>
+<br class="cl" />
+<!-- page content -->
+<div id="page-content" class="two-col container_12">
+  <ul class="breadcrumbs">
+    <li><a href="/">BitcoinJS</a> &raquo;</li>
+    <li>Blog</li>
+  </ul>
+  {% for post in site.categories.blog %}
+  <div class="grid_12">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {{ post.content }}
+  </div>
+  <br class="cl" />
+  <br />
+  {% endfor %}
+</div>

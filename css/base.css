@@ -330,6 +330,7 @@ header {
 	position:relative;
 	margin:25px 0 8px;
 	z-index: 2;
+	height: 55px;
 }
 footer {
 	padding:10px 0;
@@ -413,6 +414,34 @@ blockquote cite {
 	font-size:12px;
 	font-style:italic;
 }
+code, tt {
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px 3px 3px 3px;
+    margin: 0 2px;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+pre > code {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+}
+pre {
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+}
+pre code, pre tt {
+    background-color: transparent;
+    border: medium none;
+}
 /*//   About Page   //*/
 #teamlist {
 	margin:0;
@@ -464,7 +493,7 @@ blockquote cite {
 	font-weight:bold;
 	line-height:28px;
 	text-align:center;
-	margin:5px 20px 30px 0;
+	margin:5px 20px 90px 0;
 	float:left;
 }
 /*//   Portfolio Page   //*/
@@ -531,7 +560,7 @@ blockquote cite {
 	border-bottom:1px solid #d9d9d9;
 }
 /*////   - General Styling -   ////*/
-p {
+p, div > pre{
 	line-height:1.6;
 	margin-bottom:20px;
 }
