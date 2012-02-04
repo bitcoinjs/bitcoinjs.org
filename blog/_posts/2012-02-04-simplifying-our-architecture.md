@@ -20,7 +20,7 @@ These two changes alone significantly simplify the BitcoinJS architecture. The c
 
 But the benefits aren't just theoretical. The installation of an exit node server has gotten much simpler and you can new use the full power of the `bitcoinjs` command line tool with the exit node server.
 
-To run an exit node, just install BitcoinJS Server and run:
+To run an exit node, just [install BitcoinJS Server](https://github.com/bitcoinjs/bitcoinjs-server/wiki/Installation) and run:
 
 {% highlight sh %}
 # Install the necessary dependencies for running an exit node
