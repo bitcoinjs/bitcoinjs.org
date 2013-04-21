@@ -1,3 +1,3 @@
 # BitcoinJS Website
 
-This is the website http://www.bitcoinjs.org/
+This is the website http://bitcoinjs.org/
