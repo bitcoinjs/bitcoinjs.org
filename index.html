@@ -42,18 +42,33 @@
         background-color: #FFFFFF;
         border-radius: 50px;
       }
+
+      @media (max-width: 1000px) {
+        div,p,ul,li,div,span {
+          font-size: 10pt !important;
+        }
+
+        .prettyprint {
+          font-size: 4pt !important;
+        }
+
+        .title,.trustless {
+          margin-top: 70px;
+          font-size: 75px !important;
+        }
+      }
     </style>
   <body onload="window.prettyPrint && prettyPrint()">
   	<div class="container">
       <div class="header">
         <div class="jumbotron" class="text-center">
-          <h1 class="title">BitcoinJS <small>(aka bitcoinjs-lib)</small></h1>
+          <h1 class="title">BitcoinJS</h1>
           <h2>The clean, readable, proven library for Bitcoin JavaScript development.</h2>
           <p>
             <a href="https://travis-ci.org/bitcoinjs/bitcoinjs-lib"><img src="https://travis-ci.org/bitcoinjs/bitcoinjs-lib.png?branch=master"></a>
             <a href="https://coveralls.io/r/bitcoinjs/bitcoinjs-lib"><img src="https://coveralls.io/repos/bitcoinjs/bitcoinjs-lib/badge.png"></a>
           </p>
-          <p>
+          <p class="hidden-sm hidden-xs">
             <a href="https://nodei.co/npm/bitcoinjs-lib"><img src="https://nodei.co/npm/bitcoinjs-lib.png"></a>
           </p>
         </div>
