@@ -1,0 +1,72 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+It is my great pleasure to announce the release of BitcoinJS (formerly bitcoinjs-lib) 1.0.0!
+
+BitcoinJS is a library enabling developers to build Bitcoin (and now altcoin) wallets and applications using JavaScript. BitcoinJS is pure JavaScript - it's easy to read and understand, and works beautifully with node.js and web browsers.
+
+This is the first major new version of BitcoinJS in over three years. Since its creation, BitcoinJS has been used in Bitcoin projects everywhere. There are now over 1.5 million wallets in production that use some form of it, which have safely and securely spent billions of dollars worth of Bitcoin.
+
+Some of the projects/startups currently using this library include:
+
+Hive Wallet
+Justchain Exchange
+Project Skyhook
+BitAddress
+Blockchain.info
+Brainwallet
+Dark Wallet
+Dogechain Wallet
+GreenAddress.it
+Coinpunk
+
+We have spent the last several months bringing together forks and changes from the community and refactoring BitcoinJS to add functionality, clean up interfaces, improve the code, and add testing. We have hit 1,351 tests and 99% code coverage with this release. As it stands, BitcoinJS is the most test covered Bitcoin library for JavaScript, and is one of the most code tested Bitcoin libraries ever written.
+
+This is a substantial improvement over the previous version of BitcoinJS, and as a consequence, it's also quite different. If you're using BitcoinJS as a dependency, you should peg your dependency to 0.1.3 for now. But please consider porting to 1.0.0, as it is much improved and fixes many bugs. If you are starting a new project, we strongly recommend using 1.0.0.
+
+After 1.0.0, we will return to our previous versioning practice. 1.0.x will be interface stable. If we make substantial interface changes, we will tag that release 1.1.x, and then 1.2.x for the next interface change, and so on. Master will be the unstable development branch. Do not use the master branch in production, unless you know what you are doing!
+
+More information, features, installation, and getting started info is available on our newly designed web site for the project, which is temporarily hosted at https://coinpunk.github.com/bitcoinjs-lib. The work to move this site over to http://bitcoinjs.org is forthcoming. More in-depth documentation is also forthcoming, now that we have a solid base to document. The official repository is located at https://github.com/bitcoinjs/bitcoinjs-lib.
+
+I want to personally thank Stefan Thomas his pioneering work bringing Bitcoin to JavaScript. I also want to thank Daniel Cousens, Wei Lu, JP Richardson, and Andreas Brekken for leading on the refactor effort, and the great people at Hive, Project Skyhook, Justcoin, Ripple Labs, and the Coinpunk donors for contributing code, assistance, and funding that helped make this possible.
+
+I also want to specially thank Daniel Cousens, who has contributed an outstanding portion of the refactor work.
+
+There are many, many others that also contributed to make this release possible, my sincere apologies for not being able to highlight everyone. You can find a full, unopinionated list here: https://github.com/bitcoinjs/bitcoinjs-lib/graphs/contributors. You are all awesome. Thank you.
+
+If you're an organization or donor using BitcoinJS, please consider contributing (code or funding)! Your contributions will allow us to continue working on improving BitcoinJS. We have set up a 2-of-3 multisignature address between Daniel Cousens, Wei Lu and I for the project. We will be using it for code bounties, and payouts based on work for developers not on a salary.
+
+Our donation address is here: 35AH5XquiaikgSZ25n3igAx2JdCTQnrj54
+
+If you would like to discuss before donating, please contact one of us, and we will make sure to give you credit for contributing to the project!
+
+BitcoinJS is available through NPM (npm install bitcoinjs-lib), or by cloning the repository at https://github.com/bitcoinjs/bitcoinjs-lib, and checking out the 1.0.0 tag.
+
+I have signed release 1.0.0 (and this announcement) with my PGP key, which can be verified with my PGP public key at http://kyledrake.net/pgpkey.txt, or with the verify tool at https://keybase.io/kyledrake.
+
+
+Open source and Bitcoin are the same: when we all work together on improving the Bitcoin ecosystem, everybody wins. Help us promote open source and collaboration in the Bitcoin ecosystem, so we can ensure that we will always have a solid base for building the safe, secure, and decentralized financial systems of the future.
+
+Yours in monetary independence,
+
+Kyle Drake
+
+Dated: Bitcoin Block Height 308821
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJTs39YAAoJEIvnIQcuGGS+uBsP/1Yz9bR9T/noglh8Sm0VyJCt
+0C/6t7F94hVYmHWWPGUqz7ZU4pUoXRzlPfumdsr6Ruf4sziNn3OR0biBm2fPKySx
+UukATRt5rAis4dU1UuE8ybw8WQv/6VT44Z5PLouQk86yYOZC0gwqa+3L9HAAEveq
+dm1EdBiJE5X10zypsdYeAwBqCCzgCmVmDSBoeEcMHKO4JJOLAUc2gaN2WpC20/6F
+ucZfwu9kjAY0TVq9+LoOiZq8PQC+IjLJdyZQ1OBO6KsnDU80Y7jH9nMHZ/BfKML2
+iSQ356ukD5lFSCGqDaaisutguQOm13voTkpX/79IYy8updi7eC2E372G5HF+++a1
+tNd1HKbkqeD9OIUTrJX+fOrlRY9aGzYob8jifbiobTpVRs9WoNcWvz7hfpyt7+Hw
+iNR8riIJqMLFFDv3eNEJFtrhRfcZ1y0jPT6pyEu1v+U0/IIelkKnb0mp42Gvpj1h
+EaxWb4aL/WJVJI0fQ1vdO8RL18M/rGen6c3mpv2Xt1tbod5z9XP+O/pe/4RTqOT+
+MAEvtxwKYjk8yGMkGe9hc46IF+8MJJN5xVQmI4sw9CI9+kyibOIUq6D9OGHBm1nF
+JZXgkpdYZRmdI8WlArSCKl/nsAcgEL1o66XCILr8wI23fqQP76klymjZDJ3nlIXW
+dXDsO4vpw/44/Wb0pUaU
+=SJpm
+-----END PGP SIGNATURE-----
