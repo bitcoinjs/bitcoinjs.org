@@ -185,7 +185,7 @@ key = Bitcoin.ECKey.fromWIF("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVw
 tx.sign(0, key)
 
 // Print transaction serialized as hex
-console.log(tx.serializeHex())
+console.log(tx.toHex())
 // => 0100000001313eb630b128102b60241ca895f1d0ffca21 ...
 
 // You could now push the transaction onto the Bitcoin network manually (see https://blockchain.info/pushtx)
