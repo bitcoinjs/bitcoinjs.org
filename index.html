@@ -79,7 +79,7 @@
       </div>
 
       <div class="col-lg-12">
-        <h2><strong>BitcoinJS 1.0 has been released! <a href="/announce-1.0.0.txt">Click here</a> to read the announcement.</strong></h2>
+        <h2><strong>BitcoinJS 1.0 has been released! <a href="/announce-1.0.0.txt" target="_blank">Click here</a> to read the announcement.</strong></h2>
       </div>
 
       <div class="col-lg-12">
@@ -103,40 +103,40 @@
         <h1>Who's using BitcoinJS</h1>
         <ul>
           <li>
-            <a href="https://www.hivewallet.com">Hive Wallet</a> *
+            <a href="https://www.hivewallet.com" target="_blank">Hive Wallet</a> *
           </li>
           <li>
-            <a href="https://blockchain.info/wallet">Blockchain.info</a>
+            <a href="https://blockchain.info/wallet" target="_blank">Blockchain.info</a>
           </li>
           <li>
-            <a href="https://darkwallet.unsystem.net">Dark Wallet</a>
+            <a href="https://darkwallet.unsystem.net" target="_blank">Dark Wallet</a>
           </li>
           <li>
-            <a href="https://www.bitaddress.org">BitAddress</a>
+            <a href="https://www.bitaddress.org" target="_blank">BitAddress</a>
           </li>
           <li>
-            <a href="https://greenaddress.it">GreenAddress</a>
+            <a href="https://greenaddress.it" target="_blank">GreenAddress</a>
           </li>
           <li>
-            <a href="http://projectskyhook.com">Skyhook ATM</a> *
+            <a href="http://projectskyhook.com" target="_blank">Skyhook ATM</a> *
           </li>
           <li>
-            <a href="https://dogechain.info">Dogechain Wallet</a>
+            <a href="https://dogechain.info" target="_blank">Dogechain Wallet</a>
           </li>
           <li>
-            <a href="https://justcoin.com">Justcoin Exchange</a> *
+            <a href="https://justcoin.com" target="_blank">Justcoin Exchange</a> *
           </li>
           <li>
-            <a href="https://brainwallet.github.io">Brainwallet</a>
+            <a href="https://brainwallet.github.io" target="_blank">Brainwallet</a>
           </li>
           <li>
-            <a href="https://coinpunk.com">Coinpunk</a> *
+            <a href="https://coinpunk.com" target="_blank">Coinpunk</a> *
           </li>
           <li>
-            <a href="http://decentralbank.co">DecentralBank</a>
+            <a href="http://decentralbank.co" target="_blank">DecentralBank</a>
           </li>
           <li>
-            <a href="https://wallet.quickcoin.co">Quickcoin</a> *
+            <a href="https://wallet.quickcoin.co" target="_blank">Quickcoin</a> *
           </li>
         </ul>
         <p>* directly contributed code or funding to the project.</p>
@@ -163,35 +163,35 @@ $ browserify -r bitcoinjs-lib -s Bitcoin | uglifyjs > bitcoinjs.min.js</pre>
         <h1>Examples</h1>
         <h2>Generating a Bitcoin address:</h2>
         <pre class="prettyprint">
-key = bitcoin.ECKey.makeRandom()
+var key = bitcoin.ECKey.makeRandom();
 
 // Print your private key (in WIF format)
-console.log(key.toWIF())
+console.log(key.toWIF());
 // => Kxr9tQED9H44gCmp6HAdmemAzU3n84H3dGkuWTKvE23JgHMW8gct
 
 // Print your public key (toString defaults to a Bitcoin address)
-console.log(key.pub.getAddress().toString())
+console.log(key.pub.getAddress().toString());
 // => 14bZ7YWde4KdRb5YN7GYkToz3EHVCvRxkF
         </pre>
 
         <h2>Creating a Transaction</h2>
         <pre class="prettyprint">
-tx = new bitcoin.Transaction()
+var tx = new bitcoin.Transaction();
 
 // Add the input (who is paying) of the form [previous transaction hash, index of the output to use]
-tx.addInput("aa94ab02c182214f090e99a0d57021caffd0f195a81c24602b1028b130b63e31", 0)
+tx.addInput("aa94ab02c182214f090e99a0d57021caffd0f195a81c24602b1028b130b63e31", 0);
 
 // Add the output (who to pay to) of the form [payee's address, amount in satoshis]
-tx.addOutput("1Gokm82v6DmtwKEB8AiVhm82hyFSsEvBDK", 15000)
+tx.addOutput("1Gokm82v6DmtwKEB8AiVhm82hyFSsEvBDK", 15000);
 
 // Initialize a private key using WIF
-key = bitcoin.ECKey.fromWIF("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVwy")
+key = bitcoin.ECKey.fromWIF("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVwy");
 
 // Sign the first input with the new key
-tx.sign(0, key)
+tx.sign(0, key);
 
 // Print transaction serialized as hex
-console.log(tx.toHex())
+console.log(tx.toHex());
 // => 0100000001313eb630b128102b60241ca895f1d0ffca21 ...
 
 // You could now push the transaction onto the Bitcoin network manually (see https://blockchain.info/pushtx)
