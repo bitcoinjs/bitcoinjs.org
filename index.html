@@ -202,8 +202,8 @@ var tx = new bitcoin.TransactionBuilder()
 // Add the input (who is paying):
 // [previous transaction hash, index of the output to use]
 
-var txHash = 'aa94ab02c182214f090e99a0d57021caffd0f195a81c24602b1028b130b63e31'
-tx.addInput(txHash, 0)
+var txId = 'aa94ab02c182214f090e99a0d57021caffd0f195a81c24602b1028b130b63e31'
+tx.addInput(txId, 0)
 
 // Add the output (who to pay to):
 // [payee's address, amount in satoshis]
