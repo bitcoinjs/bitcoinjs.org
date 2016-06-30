@@ -182,7 +182,6 @@ $ browserify -r bitcoinjs-lib -s bitcoin | uglifyjs > bitcoinjs.min.js</pre>
         <h1>Examples</h1>
         <h2>Generating a Bitcoin address:</h2>
         <pre class="prettyprint">
-
 var keyPair = bitcoin.ECPair.makeRandom()
 
 // Print your private key (in WIF format)
@@ -193,15 +192,12 @@ console.log(keyPair.toWIF())
 console.log(keyPair.getAddress())
 // => 14bZ7YWde4KdRb5YN7GYkToz3EHVCvRxkF
         </pre>
-
         <h2>Creating a Transaction</h2>
         <pre class="prettyprint">
-
 var tx = new bitcoin.TransactionBuilder()
 
 // Add the input (who is paying):
 // [previous transaction hash, index of the output to use]
-
 var txId = 'aa94ab02c182214f090e99a0d57021caffd0f195a81c24602b1028b130b63e31'
 tx.addInput(txId, 0)
 
